@@ -17,7 +17,7 @@
 // git commit -m "..." --amend 撤消上次提交并重新提交  撤消的是提交到本地版本库的操作回到暂存区然后重新提交
 // git reflog 可以查看所有分支的操作记录 git log不能查看被删除的commit记录
 // git branch 查看分支
-// git branch branchName 创建分支
+// git branch branchName 创建分支 
 // git checkout branchName 切换分支
 // git checkout -b branchName 创建并切换到新分支
 function drag(id) {
@@ -28,7 +28,7 @@ function drag(id) {
         disX = evt.pageX - evt.offsetLeft
         disY = evt.pageY - evt.offsetTop
     }
-    obj.onmouseup = function(evt) {
-        console.log{'鼠标抬起'}
+    obj.onmousemove = function(evt) {
+        console.log('鼠标移动啦!')
     }
 }
