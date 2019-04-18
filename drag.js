@@ -30,13 +30,16 @@ function drag(id) {
     var disX = 0
     var disY = 0
     obj.onmousedown = function(evt) {
-        disX = evt.pageX - evt.offsetLeft
-        disY = evt.pageY - evt.offsetTop
+        disX = evt.pageX - obj.offsetLeft
+        disY = evt.pageY - obj.offsetTop
         document.onmousemove = function(evt) {
-            console.log(11111)
+            obj.style.left = evt.pageX - disX + 'px'
+            obj.style.top = evt.pageY - disY + 'px'
+        }
+        document.onmouseup = function() {
+            document.onmousemove = null
+            document.onmouseup = null
         }
     }
-    obj.onmousemove = function(evt) {
-        console.log('鼠标移动啦!')
-    }
+    return false
 }
