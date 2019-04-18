@@ -28,4 +28,7 @@ function drag(id) {
         disX = evt.pageX - evt.offsetLeft
         disY = evt.pageY - evt.offsetTop
     }
+    obj.onmouseup = function(evt) {
+        console.log{'鼠标抬起'}
+    }
 }
