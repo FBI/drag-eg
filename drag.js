@@ -31,6 +31,9 @@ function drag(id) {
     obj.onmousedown = function(evt) {
         disX = evt.pageX - evt.offsetLeft
         disY = evt.pageY - evt.offsetTop
+        document.onmouseup = function(evt) {
+            console.log('onmouseup')
+        }
     }
     obj.onmousemove = function(evt) {
         console.log('鼠标移动啦!')
