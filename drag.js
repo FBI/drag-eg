@@ -20,6 +20,10 @@
 // git branch branchName 创建分支 
 // git checkout branchName 切换分支
 // git checkout -b branchName 创建并切换到新分支
+// git branch  --merged 查看被合并分支
+// git branch --no-merged 查看未被合并的分支
+// git branch -d branchName 删除已被合并的分支
+// git branch -D branch  删除未被合并的分支
 function drag(id) {
     var obj = document.getElementById(id)
     var disX = 0
