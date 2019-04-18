@@ -24,6 +24,7 @@
 // git branch --no-merged 查看未被合并的分支
 // git branch -d branchName 删除已被合并的分支
 // git branch -D branch  删除未被合并的分支
+// git merge 合并分支
 function drag(id) {
     var obj = document.getElementById(id)
     var disX = 0
